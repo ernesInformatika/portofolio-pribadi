@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ernesto Portofolio</title>
+    <style>
+        :root {
+            --color-bg-start: #a7d8f7; /* biru sangat terang */
+            --color-bg-end: #81c7f5;  /* biru terang */
+            --color-primary: #0288d1; /* biru utama */
+            --color-text: #03396c;    /* biru gelap */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, var(--color-bg-start), var(--color-bg-end));
+            color: var(--color-text);
+            transition: background 0.7s ease;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        header {
+            background-color: var(--color-primary);
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            transition: background-color 0.7s ease;
+        }
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto;
+            overflow: visible;
+            flex-grow: 1;
+        }
+        #profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            background: rgba(255 255 255 / 0.75);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgb(0 0 0 / 0.1);
+            transition: background-color 0.7s ease;
+        }
+        #profile img {
+            border-radius: 50%;
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 5px solid var(--color-primary);
+            box-shadow: 0 4px 15px rgb(2 136 209 / 0.4);
+            transition: box-shadow 0.5s ease;
+        }
+        #profile img:hover {
+            box-shadow: 0 8px 25px rgb(2 136 209 / 0.7);
+            cursor: pointer;
+        }
+        #profile h2 {
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--color-primary);
+            text-align: center;
+        }
+        #profile p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            max-width: 600px;
+            text-align: center;
+            color: var(--color-text);
+        }
+        h2 {
+            color: var(--color-primary);
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+            border-bottom: 2px solid var(--color-primary);
+            padding-bottom: 6px;
+        }
+        .section {
+            margin: 25px 0;
+            padding: 20px 25px;
+            background: rgba(255 255 255 / 0.85);
+            border-radius: 14px;
+            box-shadow: 0 5px 20px rgb(0 0 0 / 0.1);
+            transition: background-color 0.7s ease;
+        }
+        footer {
+            text-align: center;
+            padding: 15px 10px;
+            background-color: var(--color-primary);
+            color: white;
+            box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
+            transition: background-color 0.7s ease;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .social-icons a {
+            margin: 0 12px;
+            text-decoration: none;
+            color: var(--color-primary);
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #01579b;
+        }
+        .social-icons img {
+            width: 32px;
+            height: 32px;
+            filter: drop-shadow(0 1px 1px rgba(0,0,0,0.1));
+            transition: filter 0.3s ease;
+        }
+        .social-icons img:hover {
+            filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.25));
+        }
+
+        /* Project upload form styling */
+        form.upload-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form.upload-form label {
+            background-color: var(--color-primary);
+            color: white;
+            font-weight: 600;
+            padding: 10px 22px;
+            border-radius: 30px;
+            cursor: pointer;
+            user-select: none;
+            box-shadow: 0 4px 12px rgb(2 136 209 / 0.4);
+            transition: background-color 0.3s ease;
+        }
+        form.upload-form label:hover {
+            background-color: #01579b;
+        }
+        form.upload-form input[type="file"] {
+            display: none;
+        }
+        #file-name {
+            margin-top: 12px;
+            font-style: italic;
+            color: var(--color-text);
+            font-size: 1rem;
+            max-width: 280px;
+            word-wrap: break-word;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            #profile {
+                padding: 15px;
+            }
+            .container {
+                width: 95%;
+            }
+            header {
+                padding: 15px 10px;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Pascalis Ernesto Rana</h1>
+    <p>Portofolio ini sedang dalam tahap pengembangan dan berisi proyek-proyek yang direncanakan. Meskipun belum ada karya yang tersedia, saya bersemangat untuk segera menampilkan hasil kerja saya di berbagai bidang kreatif.</p>
+</header>
+
+<div class="container">
+    <section id="profile">
+        <img src="Gambar WhatsApp 2025-06-16 pukul 08.58.23_d8c0bdd0.jpg"Foto Profil" />
+        <h2>Tentang Saya</h2>
+        <p>
+            Saya seorang Mahasiswa semester 5 yang bersemangat dalam mengembangkan portofolio dan web sebagai wadah untuk menunjukkan perkembangan kemampuan saya dalam perkuliahan. Saya bersemangat untuk belajar dan mengembangkan diri
+        </p>
+    </section>
+
+    <section class="section" id="experience">
+        <h2>Pengalaman</h2>
+        <p>
+            Terlibat dalam kepanitiaan acara LKMM Dasar sebagai Divisi Kesehatan dan Kepanitiaan Diesnatalis HIMTIKA sebagai Divisi Peralatan.
+        </p>
+    </section>
+
+    <section class="section" id="projects">
+        <h2>Project</h2>
+        <p>Anda dapat meng-upload file proyek Anda di sini:</p>
+        <form class="upload-form" id="uploadForm">
+            <label for="fileUpload">Pilih File</label>
+            <input type="file" id="fileUpload" name="fileUpload" />
+            <div id="file-name">Belum ada file dipilih</div>
+        </form>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Kontak</h2>
+        <div class="social-icons">
+            <a href="https://wa.me/6283806521613" target="_blank" aria-label="WhatsApp">
+                <img src="https://img.icons8.com/material-outlined/24/0288d1/whatsapp.png" alt="WhatsApp" />
+            </a>
+            <a href="https://www.linkedin.com/in/username" target="_blank" aria-label="LinkedIn">
+                <img src="https://img.icons8.com/material-outlined/24/0288d1/linkedin.png" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/username" target="_blank" aria-label="GitHub">
+                <img src="https://img.icons8.com/material-outlined/24/0288d1/github.png" alt="GitHub" />
+            </a>
+            <a href="https://instagram.com/ernes_4567" target="_blank" aria-label="Instagram">
+                <img src="https://img.icons8.com/material-outlined/24/0288d1/instagram-new.png" alt="Instagram" />
+            </a>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 Pascalis Ernesto Rana. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+    const fileInput = document.getElementById("fileUpload");
+    const fileNameDisplay = document.getElementById("file-name");
+
+    fileInput.addEventListener("change", () => {
+        if (fileInput.files.length > 0) {
+            fileNameDisplay.textContent = `File terpilih: ${fileInput.files[0].name}`;
+        } else {
+            fileNameDisplay.textContent = "Belum ada file dipilih";
+        }
+    });
+</script>
+
+</body>
+</html>
+
